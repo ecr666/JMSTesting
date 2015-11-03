@@ -17,6 +17,12 @@
         </repository>
     </repositories>
     <dependencies>
+        <!-- JMS 2.0 dependency -->
+        <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>javax.jms-api</artifactId>
+            <version>2.0</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-core</artifactId>
@@ -42,11 +48,12 @@
             <artifactId>j2ee</artifactId>
             <version>1.4</version>
         </dependency>
+        <!-- JMS 1.1 dependency
         <dependency>
             <groupId>javax.jms</groupId>
             <artifactId>jms</artifactId>
             <version>1.1</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
     <build>
         <!-- Override some plugin versions from parent pom -->
